@@ -6,9 +6,9 @@ This sample is using the Microsoft.Identity.Web library, which is great for conf
 Sample is getting top 5 Groups in the Tenant, and printing them in the Index view.
 
 Sample has some comments with some things to consider:
-    - Using MSAL TokenCache. Sample is using InMemory cache, which is not recommended for WebApps
-    - You can also configure Graph with Delegated permissions, and when calling a specific endpoint, you can set AppOnly permissions
-    - Admin consent was granted from the Azure AD portal.
+  - Using MSAL TokenCache. Sample is using InMemory cache, which is not recommended for WebApps
+  - You can also configure Graph with Delegated permissions, and when calling a specific endpoint, you can set AppOnly permissions
+  - Admin consent was granted from the Azure AD portal.
 
 ## Register Azure AD App
 You need to register an Azure AD App and configure MS Graph API permissions. The sample requires Application permission on _Group.Read.All_. Update the settings file Azure AD section:
