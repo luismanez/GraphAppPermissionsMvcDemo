@@ -1,0 +1,14 @@
+﻿@model IEnumerable<GroupModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Graph Top 5 Groups</h1>
+    <ul>
+        @foreach (var group in Model)
+        {
+            <li>@group.DisplayName (@group.Id)</li>
+        }
+    </ul>
+</div>
